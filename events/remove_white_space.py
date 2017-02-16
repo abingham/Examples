@@ -3,7 +3,7 @@ import roxar
 # For every event set in the project, go through and look for spaces
 for eset in project.event_sets:
     elist = eset.get_events()
-    if len(elist) > 0:
+    if elist:
         for index, event in enumerate(elist):
             new_name = [o.replace(" ", "_") for o in event.owner]
             print('Changing from "{}" to "{}"'.format(event.owner, new_name))

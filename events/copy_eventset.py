@@ -20,5 +20,5 @@ if events:
     # Output some info about the operation
     types = [event.type for event in events]
     unique_types = list(set(types))
-    print("{} events created with unique types {}".\
-        format(len(events), unique_types))
+    print("{} events created with unique types {}".
+          format(len(events), unique_types))
